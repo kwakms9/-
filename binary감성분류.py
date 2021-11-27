@@ -9,8 +9,8 @@ clf = SVC(C=1, kernel='linear')
 print_time_msg('time')
 
 kkma = Kkma()#kkma=Kkma() okt먼저써보기
-f = 'C:/Users/Me/Desktop/9000.csv'
-stopwords = 'C:/Users/Me/Desktop/stopwordcom.csv'
+f = '9000.csv'
+stopwords = 'stopwordcom.csv'
 lines = [line.split('#') for line in read_file_utf8(f).split('\r\n')[1:-1]]
 labels = [line.split('#')[-1] for line in read_file_utf8(f).split('\r\n')[1:-1]]
 stplist = [line for line in read_file_utf8(stopwords).split('\r\n')]
